@@ -15,12 +15,12 @@ Good luck and feel free to ask questions for clarity.
 
 As a user, I can register for an account and sign in.
 
-As a user, I can make posts that appear on my personal page.
+As a user, I can make posts that appear on my personal page and see the new post without reloading the page.
+
+As a user, I would like a clean and approachable interface.
 
 As a user, I can tag my posts with keywords in the form of hashtags. (ie: #fashion, #belieber)
 
 As a user, I can search for hashtags and get a list of posts with those hashtags sorted by created date starting with the most recently created.
 
 As a user, I can click a repost button on posts by others and automatically post it to my personal page. The page should not reload when I click the repost button,
-
-As a user, I would like a clean and approachable interface.
