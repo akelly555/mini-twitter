@@ -23,7 +23,6 @@ Good luck and feel free to ask questions for clarity.
 
  
   **The Page Should Only Load Once. Everything after the initial load should be handled with AJAX.**
-  ---
 
 *Bonus*
 
