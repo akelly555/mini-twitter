@@ -24,6 +24,7 @@ As a user, I would like a clean and approachable interface.
 **The Page Should Only Load Once. Everything after the initial load should be handled with AJAX.**
 
 **Bonus**
+
 As a user, I can tag my posts with keywords in the form of hashtags. (ie: #fashion, #belieber)
 
 As a user, I can search for hashtags and get a list of posts with those hashtags sorted by created date starting with the most recently created.
