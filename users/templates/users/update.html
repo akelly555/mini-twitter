@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+	<title>Read Me</title>
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+	<form type="text" action="{% url 'posts:update' pk=posts.id %}" method="POST">
+		{% csrf_token %}
+		{{ form }}
+		<button type="submit">Update</button>
+	</form>
+	<form type="text" action="{% url 'posts:delete' pk=posts.id %}" method="POST">
+		{% csrf_token %}
+		<button type="submit">Delete</button>
+	</form>
+		
+{% endblock %}
+
+

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+	{% for item in posts %}
+
+		<h1>{{item.title}}</h1>
+
+		<p>{{item.content}}</p>
+
+<!-- 		<p>{{item.slug}}</p>
+ -->
+		<a href="{% url 'posts:update' pk=item.id %}">Edit Post</a>
+
+		<!-- <a href="{% url 'blog:delete' pk=item.id %}">delete blog</a> -->
+
+	{% endfor %}
+{% endblock %}

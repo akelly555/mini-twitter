@@ -1,0 +1,49 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+	<meta charset="UTF-8">
+	{% block head_title %}
+	<title>TRY DJ 1.9</title>
+	{% endblock head_title%}
+
+
+<!-- 	<title>Welcome to ma Twittaaaaa</TABLE></title>
+ -->
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+	
+	<link rel="stylesheet" href="{% static 'css/posts.css' %}">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<div class="container">
+	 	{% block header %}
+		<h1><a class="heading">My Awesome and Valuable Posts</h1>
+			<div class="create_link" href="{% url 'posts:create' %}">	
+				<h2><a href="{% url 'posts:create' %}">Create New Post</h2></a>
+					
+			<!-- 	<img src="http://www.freshorigins.com/wp-content/uploads/2013/05/premium-flowers-assortment.jpg" width="50%"/> -->
+
+				<img src="http://www.wallpapershd.online/wp-content/uploads/2015/11/Beach-Scenery.jpg" width="80%"/>
+				
+			</div>
+		{% endblock %}
+		<div class="content">
+			{% block content %}
+			{% endblock %}
+		</div>
+		<footer>
+			{% block footer %}
+			{% endblock %}
+		</footer>
+	</div>
+
+</body>
+</html>
