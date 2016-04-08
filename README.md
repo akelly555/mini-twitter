@@ -1,5 +1,5 @@
 Phase 2 Assessment - Mini Twitter!
-------------------------------------
+----------------------------------
 
 For your assessment today we'll be building our own mini version of Twitter.
 
